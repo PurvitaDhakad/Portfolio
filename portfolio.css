@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#Home{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(3, 14, 34);
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 26px;
+    color: #b2cae2;
+    margin-left: 20px;
+}
+ul li{
+    margin: 7px;
+    list-style: none;
+    font-size: 25px;
+   font-family:monospace;
+   font-weight: bold;
+   margin-right: 100px;
+}
+
+ul li a{
+color: rgb(219, 212, 212);
+text-decoration: none;
+}
+
+ul li a :hover{
+    color: rgb(86, 85, 85);
+    text-decoration: none;
+    }
+.bg{
+    height: 80px;
+    width: 100px;
+}
+.background-img{
+    background-image:linear-gradient(rgba(189, 189, 245, 0.411),rgba(162, 176, 220, 0.349)),url(https://png.pngtree.com/thumb_back/fh260/background/20210713/pngtree-edgy-creal-modern-portfolio-image_738934.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    
+}
+.headingtext{
+    height: 90vh;
+    width: 90wh;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   flex-direction: column;
+
+}
+.heading{
+    font-size: 55px;   
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(2, 33, 71); 
+    font-weight: bold;
+    margin-top: 108px;
+  text-align: center;
+    width: 100vh;
+
+}
+.text{
+    font-weight: bold;
+    font-size: 50PX;
+    color: rgb(2, 4, 51);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+.midheading{
+    font-size: 30px;   
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100vh;
+    text-align: center;
+}
+
+button:hover{
+    color: blanchedalmond;
+    background-color: rgba(2, 19, 2, 0.404);
+}
+   .arrow-container {
+      display: flex;
+      align-items: center;
+      margin-right: 400px;
+      margin-top: 30px;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   .right-arrow
+   {
+      width: 0;
+      height: 0;
+      margin: -100px;
+   }
+   .right-arrow
+   {
+      border-top: 18px solid transparent;
+      border-bottom: 18px solid transparent;
+   }
+
+   .right-arrow {
+      border-left: 25px solid #0c0c0c;
+   }
+   .arrow-move {
+      position: relative;
+      animation: move 2s ease-in-out infinite;
+   }
+ 
+
+.bg-img{
+    background-color: #98b7d5;
+    height: 90vh;
+    
+}
+.imgs{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 250px;
+    padding-right:70px ;
+    width: auto;
+    
+}
+.imgs img{
+    height: 400px;
+   
+}
+.midheadings{
+    font-size: 25px;   
+    font-family: 'Times New Roman', Times, serif; 
+    color: rgb(233, 231, 230); 
+    font-weight: bold;
+   padding-left: 25px;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -160px;
+}
+
+
+.service{
+    background-color: rgb(240, 243, 237);
+    height:75vh;
+    padding:30px;
+    padding-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+  
+    
+}
+.serviceheading{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    
+}
+.cardimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out; 
+    /* accessing the parentn element  and giving the hover property to it */
+
+}
+.card:hover .cardimg img{
+    transform: scale(1.1);
+}
+
+.cardimg{
+    height: 180px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    /* padding-inline: 10px; */
+}
+.servicebox{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+.textoverlay{
+    height: 230px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+   
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+
+}
+
+
+/* ------------------------------logo of insta fb and linkedin----------------------- */
+.imgss{
+    padding-top: 5px;
+    margin-left: -300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 27px;
+ margin-bottom: 5px;
+  }
+  .imgss img{
+    height:28px;
+  }
+  .card{
+    position: relative;
+}
+
+/* ---------------------------------------- projects ------------------------------ */
+
+
+#projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(45, 77, 220);
+    margin-bottom: 15px;
+}
+
+#projects h1 {
+    text-align: center;
+    color: #f9f7f7;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.project {
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 6px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #0073e6;
+}
+
+.description {
+    color: #666;
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.technologies {
+    list-style-type: none;
+    padding: 0;
+}
+
+.technologies li {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 17px;
+    height: 30px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #005bb5;
+}
+.footertext{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+/* Existing styles unchanged at the top */
+
+/* Make heading and container sections responsive */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    ul li {
+      font-size: 20px;
+      margin: 10px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .arrow-container {
+      flex-direction: column;
+      margin-right: 0;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  
+    .imgs img {
+      height: 200px;
+    }
+  
+    .heading {
+      font-size: 40px;
+      width: auto;
+      margin-top: 50px;
+    }
+  
+    .text {
+      font-size: 30px;
+    }
+  
+    .midheading {
+      font-size: 20px;
+    }
+  
+    .imgss img {
+      height: 20px;
+    }
+  }
+  
+  /* Adjust for smaller screens like mobile (max-width 480px) */
+  @media (max-width: 480px) {
+ 
+
+    .arrow-container {
+        display: flex;
+        align-items: center;
+        margin-right: 200px;
+        margin-top: 30px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .right-arrow
+     {
+        width: 0;
+        height: 0;
+        margin: -30px;
+        margin-right: 60px;
+     }
+  
+     @media (max-width: 480px) {
+        /* Adjust heading */
+        .heading {
+          font-size: 25px;
+          margin-top: 29px;
+          text-align: center; /* Ensure text stays centered */
+          width: 90%; /* Limit width to fit within the screen */
+        }
+      
+        /* Adjust text */
+        .text {
+          font-size: 15px;
+          text-align: center; /* Align text properly for smaller screens */
+          margin: 0 auto; /* Center text content */
+          width: 90%; /* Restrict to 90% of the screen width */
+        }
+        .midheading {
+            font-size: 13px; /* Reduce font size for smaller screens */
+            text-align: center;
+            /* Add some padding to prevent text from touching edges */
+            width: 470%; /* Ensure it stays within the screen */
+            /* word-wrap: break-word; Ensure long words break into the next line */
+          }
+      
+        /* Adjust images */
+        .imgs img {
+          height: 100px;
+          max-width: 100%; /* Ensure image doesn't exceed screen width */
+          display: block;
+          margin: 0 auto; /* Center image on the screen */
+          margin-left: 200px;
+
+        }
+      
+        /* Adjust list items */
+        ul {
+          flex-direction: column; /* Stack items vertically for smaller screens */
+          padding: 0;
+        }
+      
+        ul li {
+          font-size: 14px;
+          text-align: center; /* Center align text */
+          margin: 10px 0; /* Add spacing between items */
+          width: 100%; /* Use full screen width */
+        }
+        .midheadings {
+            font-size: 13px; /* Reduce font size for smaller screens */
+            text-align: center;
+     
+            width: 40%; /* Ensure it stays within the screen */
+         
+          }
+          
+      
+     }
+      
+  .servicesection{
+  margin-top: -58px;
+  }
+    .servicebox {
+      flex-direction: column;
+  
+    }
+  
+    .cardimg {
+      height:60px;
+      width: 122px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .technologies li {
+      font-size: 14px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+  
+    .project {
+      padding: 10px;
+    }
+  
+    .project-link {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
+  /* Additional adjustments for larger screens (desktops) */
+  @media (min-width: 1200px) {
+    .container {
+      justify-content: space-between;
+    }
+  
+    .heading {
+      font-size: 60px;
+    }
+  
+    .text {
+      font-size: 50px;
+    }
+  
+    .cardimg {
+      height: 200px;
+      width: 250px;
+    }
+  
+    .servicebox {
+      justify-content: space-evenly;
+    }
+  
+    .technologies li {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Adjust heading */
+    .heading {
+      font-size: 35px;
+      margin-top: 40px;
+      text-align: center; /* Center text for tablets */
+      width: 85%; /* Adjust width to fit tablet screens */
+    }
+  
+    /* Adjust text */
+    .text {
+      font-size: 20px;
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+    }
+  
+    /* Adjust midheading */
+    .midheading {
+      font-size: 20px;
+      text-align: center;
+      margin: 0 auto;
+      width: 90%; /* Keep it within the screen */
+      word-wrap: break-word;
+    }
+  
+    .midheadings {
+      font-size: 34px;
+      text-align: center;
+      width: 100%;
+      margin-top: 170px;
+    }
+  
+    /* Adjust images */
+    .imgs img {
+      height: 270px;
+      max-width: 100%;
+       align-items: center;
+      margin:0px auto;
+     
+    }
+  
+    /* Service section adjustments */
+    .servicesection {
+      margin-top: -30px;
+    }
+  
+    .servicebox {
+      flex-direction: row; /* Display services side-by-side for tablets */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .cardimg {
+      height: 120px;
+      width: 150px;
+      margin: 10px;
+    }
+  
+    /* Project section adjustments */
+    .project {
+      padding: 15px;
+    }
+  
+    .project-link {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+  
+    /* Technology tags */
+    .technologies li {
+      font-size: 16px;
+      height: auto;
+      margin-bottom: 8px;
+    }
+  
+    /* Navigation list */
+    ul {
+      flex-direction: row; /* Keep horizontal layout for tablets */
+      justify-content: space-around;
+    }
+  
+    ul li {
+      font-size: 18px;
+      text-align: center;
+      margin: 0 10px;
+    }
+  }
+  
